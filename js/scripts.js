@@ -23,55 +23,88 @@ function birthDay(birthday) {
     birthday=parseInt(day_of_the_week.toFixed(0));
     return birthday;
 }
-alert(birthDay());
-
 //The user should pick their gender..
 var gender=prompt("Gender: ");
 //Use the gender to give a name.
 let maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 let femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-if(gender==="male"){
-    switch(birthday){
+function femaleNaming(){
+    switch(birthDay()){
         case 1:
-            maleNames.forEach(function(item,index,maleNames){
-                alert(maleNames[0]);
-            })
+            //Born on Sunday
+            alert(femaleNames[0]);
             break;
         case 2:
-            maleNames.forEach(function(item,index,maleNames){
-                alert(maleNames[1]);
-            })
+            //Born on Monday
+            alert(femaleNames[1]);
             break;
         case 3:
-            maleNames.forEach(function(item,index,maleNames){
-                alert(maleNames[2]);
-            })
+            //Born on Tuesday
+            alert(femaleNames[2]);
             break;
         case 4:
-            maleNames.forEach(function(item,index,maleNames){
-                alert(maleNames[3]);
-            })
+            //Born on Wednesday
+            alert(femaleNames[3]);
             break;
         case 5:
-            maleNames.forEach(function(item,index,maleNames){
-                alert(maleNames[4]);
-            })
+            //Born on Thursday
+            alert(femaleNames[4]);
             break;
         case 6:
-            maleNames.forEach(function(item,index,maleNames){
-                alert(maleNames[5]);
-            })
+            //Born on Friday
+            alert(femaleNames[5]);
             break;
         case 7:
-            maleNames.forEach(function(item,index,maleNames){
-                alert(maleNames[6]);
-            })
+            //Born on Saturday
+            alert(femaleNames[6]);
             break;
+        default:
+            alert("Maybe you entered a wrong date!!!");
+    }
+}
+function maleNaming(){
+    switch(birthDay()){
+        case 1:
+            //Born on Sunday
+            alert(maleNames[0]);
+            break;
+        case 2:
+            //Born on Monday
+            alert(maleNames[1]);
+            break;
+        case 3:
+            //Born on Tuesday
+            alert(maleNames[2]);
+            break;
+        case 4:
+            //Born on Wednesday
+            alert(maleNames[3]);
+            break;
+        case 5:
+            //Born on Thursday
+            alert(maleNames[4]);
+            break;
+        case 6:
+            //Born on Friday
+            alert(maleNames[5]);
+            break;
+        case 7:
+            //Born on Saturday
+            alert(maleNames[6]);
+            break;
+            
         default:
             alert("Maybe you enter a wrong date!!!");
     }
+}
+
+
+if(gender==="male"){
+    maleNaming()
+   
 }else if(gender==="female"){
-    alert("Give female name");
+    femaleNaming()
+   
 }else{
     alert("You forgot to pick your gender!");
 }
