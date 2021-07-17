@@ -25,9 +25,11 @@ function birthDay(birthday) {
 }
 //The user should pick their gender..
 var gender=prompt("Gender: ");
-//Use the gender to give a name.
+//Contain male names
 let maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+//Contain Female names.
 let femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+//Naming female.
 function femaleNaming(){
     switch(birthDay()){
         case 1:
@@ -62,6 +64,7 @@ function femaleNaming(){
             alert("Maybe you entered a wrong date!!!");
     }
 }
+//naming males.
 function maleNaming(){
     switch(birthDay()){
         case 1:
@@ -97,8 +100,7 @@ function maleNaming(){
             alert("Maybe you enter a wrong date!!!");
     }
 }
-
-
+//Use the gender to give a name.
 if(gender==="male"){
     maleNaming()
    
@@ -106,5 +108,6 @@ if(gender==="male"){
     femaleNaming()
    
 }else{
+    //Occurs when no gender is picked.
     alert("You forgot to pick your gender!");
 }
