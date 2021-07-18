@@ -12,9 +12,12 @@ input {
 .submit {
     width: 60px;
 }
+
 footer {
     background-color: black;
     color: white;
     height: 300px;
 }
-
+.jumbotron {
+    background-color: darkolivegreen;
+}
