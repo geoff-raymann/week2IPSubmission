@@ -34,31 +34,31 @@ function femaleNaming(){
     switch(birthDay()){
         case 1:
             //Born on Sunday
-            alert(femaleNames[0]);
+            alert(femaleNames[0]+", born on Sunday");
             break;
         case 2:
             //Born on Monday
-            alert(femaleNames[1]);
+            alert(femaleNames[1]+", born on Monday");
             break;
         case 3:
             //Born on Tuesday
-            alert(femaleNames[2]);
+            alert(femaleNames[2]+", born on Tuesday");
             break;
         case 4:
             //Born on Wednesday
-            alert(femaleNames[3]);
+            alert(femaleNames[3]+", born on Wednesday");
             break;
         case 5:
             //Born on Thursday
-            alert(femaleNames[4]);
+            alert(femaleNames[4]+", born on Thursday");
             break;
         case 6:
             //Born on Friday
-            alert(femaleNames[5]);
+            alert(femaleNames[5]+", born on Friday");
             break;
         case 7:
             //Born on Saturday
-            alert(femaleNames[6]);
+            alert(femaleNames[6]+", born on Saturday");
             break;
         default:
             alert("Maybe you entered a wrong date!!!");
@@ -69,31 +69,31 @@ function maleNaming(){
     switch(birthDay()){
         case 1:
             //Born on Sunday
-            alert(maleNames[0]);
+            alert(maleNames[0]+", born on Sunday");
             break;
         case 2:
             //Born on Monday
-            alert(maleNames[1]);
+            alert(maleNames[1]+", born on Monday");
             break;
         case 3:
             //Born on Tuesday
-            alert(maleNames[2]);
+            alert(maleNames[2]+", born on Tuesday");
             break;
         case 4:
             //Born on Wednesday
-            alert(maleNames[3]);
+            alert(maleNames[3]+", born on Wednesday");
             break;
         case 5:
             //Born on Thursday
-            alert(maleNames[4]);
+            alert(maleNames[4]+", born on Thursday");
             break;
         case 6:
             //Born on Friday
-            alert(maleNames[5]);
+            alert(maleNames[5]+", born on Friday");
             break;
         case 7:
             //Born on Saturday
-            alert(maleNames[6]);
+            alert(maleNames[6]+", born on Saturday");
             break;
             
         default:
@@ -102,10 +102,10 @@ function maleNaming(){
 }
 //Use the gender to give a name.
 if(gender==="male"){
-    maleNaming()
+    maleNaming();
    
 }else if(gender==="female"){
-    femaleNaming()
+    femaleNaming();
    
 }else{
     //Occurs when no gender is picked.
