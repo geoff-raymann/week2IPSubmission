@@ -1,5 +1,5 @@
 @media  screen and (min-width: 300px) and (max-width:500px){
-    body {
+    container {
         background-color: gray;
         color: black;
     }  
@@ -20,4 +20,8 @@ footer {
 }
 .jumbotron {
     background-color: darkolivegreen;
+}
+main {
+    padding: 10%;
+    margin: 10%;
 }
