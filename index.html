@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/sscripts.js"></script>
+    <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -41,25 +41,55 @@
     </header>
     <main>
         <h2>Check who you would be named in Ghana.</h2>
-        <h4>When is yuor birthday?</h4>
-            DD          MM             CC  YY
-            <details>
-                <summary>Check the description to be sure</summary>
-                <p>DD stands for the date you were born i.e between 01 and 31</p>
-                <p>MM stands for th month you were born i.e between 01 and 12</p>
-                <p>CC stands for the century figures of your birth year e.g we having 18..s, 19..s, 20..s, 17..s</p>
-                <p>YY stands for the year figure of your birth e.g I was born in 1998 so year figure is 98</p>
-            </details>
-        <h4>Are you a male or female?</h4>
-            Male   <span>&nbsp;</span>        Female <br>
-        The card with the result pops up here.
+        <hr>
+        <br><br>
+
+        <form action="js/scripts.js" onsubmit="birthDay">
+            <h4>When is your birthday?</h4>
+            <input type="text" placeholder="DD" id="ydate" name="birth_day">
+            <span>&nbsp;&nbsp;/&nbsp;</span>
+            <input type="text" placeholder="MM" id="ymonth" name="birth_month">
+            <span>&nbsp;&nbsp;/&nbsp;</span>
+            <input type="text" placeholder="CC" id="ycentury" name="birth_century">
+            <input type="text" placeholder="YY" id="yyear" name="birth_year">
+            <br><br><br>
+                
+                    <details id="#describe">
+                        <summary>Check the description to be sure</summary>
+                        <p>DD stands for the date you were born i.e between 01 and 31</p>
+                        <p>MM stands for th month you were born i.e between 01 and 12</p>
+                        <p>CC stands for the century figures of your birth year e.g we having 18..s, 19..s, 20..s, 17..s</p>
+                        <p>YY stands for the year figure of your birth e.g I was born in 1998 so year figure is 98</p>
+                    </details>
+
+                
+                <br><br><br><br>
+                <h4>Are you a male or female?</h4>
+                <input class="gender" type="radio" id="mgender" name="Gender">
+                <label for="mgender">Male</label>  
+                <span>&nbsp;</span>
+                <input class="gender" type="radio" id="fgender" name="Gender">
+                <label for="fgender">Female</label><br><br>
+                <input type="submit" class="fsubmit" style="width: 100px;">
+        </form>
+
+        <br><br>
     </main>
     <footer>
-        <h5>Copyright &copy; 2021. All rights Reserved.</h5>
-        Contact me <br>
-        Linkedin <br>
-        Twitter <br>
-        Facebook <br>
+        <div class="row">
+            <div class="col-md-6">
+                <br><br>
+                <h5>Copyright &copy; 2021. All rights Reserved.</h5>
+            </div>
+            <div class="col-md-6">
+                <br><br>
+                Contact me <br>
+                Linkedin <br>
+                Twitter <br>
+                Facebook <br>
+            </div>
+        </div>
+        
     </footer>
     
 </body>
