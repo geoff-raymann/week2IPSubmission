@@ -101,10 +101,10 @@ function maleNaming(){
     }
 }
 //Use the gender to give a name.
-if(gender==="male"){
+if(gender.toLowerCase() === "male"){
     maleNaming();
    
-}else if(gender==="female"){
+}else if(gender.toLowerCase() === "female"){
     femaleNaming();
    
 }else{
