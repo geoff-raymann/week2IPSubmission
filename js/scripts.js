@@ -10,12 +10,12 @@ $(document).ready(function(){
     var month=parseInt($('input#ymonth').val());
         while(month<=0 || month>12){
             alert("Enter a valid month!!");
-            continue;
+            break;
         }
     var century=parseInt($('input#ycentury').val());
         while(century<=12 || century>21){
             alert("Enter centuries between 12 and 21!");
-            continue;
+            break;
         }
     var year=parseInt($('input#yyear').val());
     event.preventDefault();
