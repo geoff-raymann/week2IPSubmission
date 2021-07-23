@@ -17,6 +17,7 @@ footer {
     background-color: black;
     color: white;
     height: 300px;
+    text-align: center;
 }
 .jumbotron {
     background-color: darkolivegreen;
@@ -33,4 +34,12 @@ main {
 body {
     background-color: gray;
     color: gray;
+}
+
+.card {
+    height: fit-content;
+    color: darkolivegreen;
+    text-align: center;
+    font-size: medium;
+
 }
